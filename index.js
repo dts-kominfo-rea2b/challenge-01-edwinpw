@@ -14,6 +14,29 @@ const firstUserFavoriteColor	 = new Set([
     'Yellow', 'Pink', 'White', 'Purple'
 ])
 
+const firstuserEducation = [
+    {
+        name: 'SD 01', 
+        city: 'Jakarta', 
+        graduate: 2016
+    },
+    {
+        name: 'SMP 02', 
+        city: 'Jakarta', 
+        graduate: 2019
+    },
+    {
+        name: 'SMA 03', 
+        city: 'Tangerang'
+    }
+]
+
+var resultfirstuserEducation = firstuserEducation.map(function(el) {
+    var o = Object.assign({}, el);
+    return o;
+})
+
+
 const firstUserFavoriteRestaurant = new Set([
     'Bento',
     'Sushi',
@@ -87,6 +110,7 @@ const firstUser = {
     email: setUserInfo.get('firstUserEmail'),
     favoriteColor : firstUserFavoriteColor,
     isHavePet : setUserInfo.get('firstUserisHavePet'),
+    education : resultfirstuserEducation,
     favoriteRestaurant : firstUserFavoriteRestaurant
 
 };
@@ -97,6 +121,7 @@ const secondUser = {
     email: setUserInfo.get('secondUserEmail'),
     favoriteColor : secondUserFavoriteColor,
     isHavePet : setUserInfo.get('secondUserisHavePet'),
+    education : resultseconduserEducation,
     favoriteRestaurant : secondUserFavoriteRestaurant
 };
 
