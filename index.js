@@ -10,9 +10,9 @@ setUserInfo.set('firstUserAge','17');
 setUserInfo.set('firstUserEmail','monica@dingdong.com');
 setUserInfo.set('firstUserisHavePet','Yes');
 
-const firstUserFavoriteColor	 = new Set([
+const firstUserFavoriteColor	 = Array.from(new Set([
     'Yellow', 'Pink', 'White', 'Purple'
-])
+]))
 
 const firstuserEducation = [
     {
@@ -37,7 +37,7 @@ var resultfirstuserEducation = firstuserEducation.map(function(el) {
 })
 
 
-const firstUserFavoriteRestaurant = new Set([
+const firstUserFavoriteRestaurant = Array.from(new Set([
     'Bento',
     'Sushi',
     'Pancake',
@@ -49,7 +49,7 @@ const firstUserFavoriteRestaurant = new Set([
     'Tteok',
     'Sushi',
     'Sushi'
-])
+]))
 
 
 //second user
@@ -59,9 +59,9 @@ setUserInfo.set('secondUserAge','23');
 setUserInfo.set('secondUserEmail','wendy@dingdong.com');
 setUserInfo.set('secondUserisHavePet','No');
 
-const secondUserFavoriteColor	 = new Set([
+const secondUserFavoriteColor	 = Array.from(new Set([
     'Blue', 'Black', 'Grey'
-])
+]))
 
 const seconduserEducation = [
     {
@@ -90,7 +90,7 @@ var resultseconduserEducation = seconduserEducation.map(function(el) {
     return o;
 })
 
-const secondUserFavoriteRestaurant = new Set([
+const secondUserFavoriteRestaurant = Array.from(new Set([
     'Tempura', 
     'Bento', 
     'Sushi', 
@@ -100,7 +100,7 @@ const secondUserFavoriteRestaurant = new Set([
     'Geprek', 
     'Pancake', 
     'Eggy'
-])
+]))
 
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 const firstUser = {
